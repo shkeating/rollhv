@@ -9,6 +9,7 @@
     <meta name="description" content="your guide to roller skating in the Hudson Valley">
     <meta name="author" content="Shauna Keating">
     <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
     <link rel="stylesheet" href="style.css">
 
@@ -16,13 +17,17 @@
 
 <body>
     <header>
-        <nav>
-            <a href="index.html" id="logo" aria-label="Home">🛼</a>
-            <div>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active" id="logo" aria-label="Home">🛼</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="page-links">
                 <a href="rinks.html">Rinks</a>
                 <a href="trails.html">Trails</a>
                 <a href="skateparks.html">Skateparks</a>
             </div>
+
         </nav>
         <h1>Trails</h1>
     </header>
@@ -114,4 +119,5 @@
                 rel="noopener noreferrer">Inclusive Sans</a> & <a href="https://fonts.google.com/specimen/Bagel+Fat+One"
                 target="_blank" rel="noopener noreferrer">Bagel Fat One</a> served over Google Fonts.</p>
     </footer>
+    <script src="scripts.js"> </script>
 </body>

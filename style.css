@@ -79,10 +79,72 @@ h4 {
     font-weight: 400;
 }
 
+a:focus,
+button:focus {
+    outline: 2px solid #ff0040;
+
+}
+
 /* Header Styles */
+
+.page-links {
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav.responsive .page-links {
+    background: #02175b;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 52px;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    /* height: 100vh; */
+    justify-content: flex-start;
+}
+
+.topnav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.5s ease;
+}
+
+.topnav a:hover,
+.topnav a:focus {
+    color: #FFC300;
+    text-decoration: underline;
+}
+
+.topnav a:focus {
+    outline: 3px solid #FFC300;
+}
+
+.topnav a.active {
+    background-color: #aa04aa84;
+}
+
+
+
 
 #logo {
     font-size: 2.5rem;
+}
+
+#logo:hover {
+    text-decoration: none;
+    transform: rotate(560deg);
+}
+
+#logo.active {
+    background-color: transparent;
 }
 
 header {
@@ -104,10 +166,7 @@ header nav {
     justify-content: space-between;
 }
 
-header nav a {
-    color: #fff;
-    text-decoration: none;
-}
+
 
 /* Main section */
 
@@ -140,4 +199,26 @@ footer p:last-child {
 
 .st-img {
     width: 100%;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 480px) {
+    .topnav .icon {
+        display: none;
+    }
+
+    .page-links {
+        display: none;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: auto;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0;
+        justify-content: flex-start;
+    }
 }
